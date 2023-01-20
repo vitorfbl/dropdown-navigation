@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img class="logo" src="images/logo.svg" alt="">
+
+    <ul class="top-nav">
+      
+      <li  onmouseover="showPanel()" onmouseout="closePanel()">Features</li>
+      <img class="arrow " src="images/icon-arrow-down.svg" alt="" id="arrow" onmouseover="showPanel()" >
+      <img class= "arrow hidden"src="/images/icon-arrow-up.svg" id="arrow-up" onmouseout="closePanel()" alt="">
+      <li onmouseover="showPanel2()" onmouseout="closePanel2()">Company</li>
+      <img class="arrow2" src="images/icon-arrow-down.svg" alt="" id="arrow2" onmouseover="showPanel2()">
+      <img class= "arrow2 hidden"src="/images/icon-arrow-up.svg" alt="" id="arrow-up2" onmouseout="closePanel2()">
+      <li>Careers</li>
+      <li> About</li>
+    </ul>
+    <div class="login">
+      <button class="login-btn">Login</button>
+      <button class="register-btn">Register</button>
+    </div>
+      <h1 class="title">Make remote work</h1>
+    <img class="hero-img" src="images/image-hero-desktop.png" alt="">
+      <p class="subtitle">Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+        <button class="learn-more"><strong>Learn more</strong></button>
+
+        <div class="partners">
+          <img src="/images/client-databiz.svg" alt="">
+          <img src="/images/client-audiophile.svg" alt="">
+          <img src="/images/client-meet.svg" alt="">
+          <img src="/images/client-maker.svg" alt="">
+        </div>
+        <div class="painel1 hidden" id="panel1">
+          <ul>
+            <img src="/images/icon-todo.svg"  alt="">
+            <li>Todo list</li>
+            <img src="/images/icon-calendar.svg" alt="">
+            <li>Calendar</li>
+            <img src="/images/icon-reminders.svg" alt="">
+            <li>Reminders</li>
+            <img src="/images/icon-planning.svg" alt="">
+            <li>Planning</li>
+          </ul>
+        </div>
+        <div class="painel2 hidden " id="panel2">
+          <ul>       
+            <li>History</li>    
+            <li>Our team</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/vitorfbl">vitorfbl</a>.
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
